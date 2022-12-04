@@ -44,7 +44,7 @@ export default function App({navigation}) {
   return (
     <ImageBackground source={img} style={styles.container}>
       <View style={styles.backgroudcolour}>
-          <TouchableOpacity onPress={() => navigation.navigate("home")}>
+          <TouchableOpacity onPress={() => navigation.navigate("Home")}>
             <View style={styles.button}>
               <AntDesign name="back" size={24} color="black" style={styles.button} />
             </View>
@@ -109,7 +109,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "90%",
     left: 20,
-    top : -80
+    top: -80,
+    borderWidth : 2,
   },
   sign2: {
     left: -45,
@@ -120,7 +121,8 @@ const styles = StyleSheet.create({
     left: -45,
     top: -40,
     borderRadius: 100,
-    width : 340,
+    width: 320,
+    borderWidth : 2
   },
   sign4: {
     left: -45,
@@ -131,7 +133,8 @@ const styles = StyleSheet.create({
     left: -45,
     top: -20,
     borderRadius: 100,
-    width : 340,
+    width: 320,
+    borderWidth : 2
   },
   sign6: {
     left: -45,
@@ -142,7 +145,8 @@ const styles = StyleSheet.create({
     left: -45,
     top: 0,
     borderRadius: 100,
-    width : 340,
+    width: 320,
+    borderWidth : 2
   },
   register1: {
     borderRadius: 10,
@@ -150,11 +154,13 @@ const styles = StyleSheet.create({
     width: "30%",
     padding: 5,
     left: 150,
-    top : -60,
+    top: -60,
+    borderWidth : 2
   },
   register2: {
     fontWeight: "bold",
-    left: 35,
+    left: 25,
+    letterSpacing : 0.5
   },
   modalBackGround: {
     flex: 1,

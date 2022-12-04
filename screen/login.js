@@ -20,7 +20,7 @@ export default function App({navigation}) {
           <Text style={styles.sign4}>Password :</Text>
           <TextInput style={styles.sign5}></TextInput>
         </View>
-        <TouchableOpacity onPress={() => navigation.navigate("history")}>
+        <TouchableOpacity onPress={() => navigation.navigate("Menu")}>
           <View style={styles.login1}>
           <Text style = {styles.login2}>Login</Text>
           </View>
@@ -55,7 +55,8 @@ const styles = StyleSheet.create({
     borderRadius: 10,
     width: "90%",
     left: 20,
-    top : -80
+    top: -80,
+    borderWidth: 2
   },
   sign2: {
     left: -35,
@@ -66,7 +67,8 @@ const styles = StyleSheet.create({
     left: -35,
     top: -30,
     borderRadius: 100,
-    width : 340,
+    width: 325,
+    borderWidth : 2
   },
   sign4: {
     left: -35,
@@ -77,7 +79,8 @@ const styles = StyleSheet.create({
     left: -35,
     top: -10,
     borderRadius: 100,
-    width : 340,
+    width: 325,
+    borderWidth: 2
   },
   login1: {
     borderRadius: 10,
@@ -85,11 +88,12 @@ const styles = StyleSheet.create({
     width: "30%",
     padding: 5,
     left: 150,
-    top : -60,
+    top: -60,
+    borderWidth: 2
   },
   login2: {
     fontWeight: "bold",
-    left : 41
+    left : 35, letterSpacing : 0.5
   }
 
 });

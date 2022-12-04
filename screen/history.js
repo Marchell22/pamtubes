@@ -33,7 +33,7 @@ const history = ({navigation}) => {
   const img = require('../assets/latar.png')
     const renderItem = ({ item }) => (
       <View style={styles.flet}>
-            <Image source={item.logo} style ={{width : 30, height : 30, marginLeft : 300, top: 50, marginTop : -10, marginBottom : 0 }}></Image>
+            <Image source={item.logo} style ={{width : 20, height : 20, marginLeft : 300, top: 50, marginTop : -10, marginBottom : 0 }}></Image>
             <Text style={{marginLeft : 10, top:-10}}>No : {item.No}</Text>
             <Text style={{marginLeft : 10, top:-10}}>Nama : {item.Nama}</Text>
             <Text style={{marginLeft : 10, top:-10}}>No. Handphone : {item.No_HP}</Text>
@@ -46,21 +46,21 @@ const history = ({navigation}) => {
         <View style={styles.backgroudcolour}>
             <View style={styles.header}>
                 <TouchableOpacity onPress={() => navigation.goBack()}>
-                    <View style={{alignItems : "flex-start", left : 20, top : 75 }}>
+                    <View style={{alignItems : "flex-start", left : 20, top : 85 }}>
                         <AntDesign name="back" size={30} color="black" style={styles.button} />
                     </View>
                 </TouchableOpacity>
-                <Text style={{ fontWeight: "bold", fontSize: 30, top: 40, left: 80 }}>History</Text>
+                <Text style={{ fontWeight: "bold", fontSize: 30, top: 50, left: 80, letterSpacing : 1, }}>History</Text>
                 <Image style={{width : 200, height : 200, left : 230, top : -70}} source={require('../assets/logo.png')}></Image>  
             </View>
             <SafeAreaView>
-                <ScrollView style={styles.scrollView}>
+                <View style={styles.scrollView}>
                     <FlatList
                         data={data}
                         renderItem={renderItem}
                         keyExtractor={item => item.id}
                     />
-                </ScrollView>
+                </View>
             </SafeAreaView>
         </View>
     </ImageBackground>
@@ -79,14 +79,16 @@ const styles = StyleSheet.create({
     backgroundColor: "#CDD8E3",
     borderRadius: 10,
     width: "100%",
-    height : "20%"
+    height: "20%",
+    top : -20
   },
   flet: {
     backgroundColor: "#CDD8E3",
     borderRadius: 10,
     marginTop: 40,
     width: "90%",
-    marginLeft : 20
+    marginLeft: 20,
+    borderWidth : 2
   }
 });
 export default history;

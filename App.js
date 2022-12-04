@@ -1,9 +1,17 @@
 import splash from "./screen/splash";
-import home from "./screen/home";
+import Home from "./screen/Home";
 import login from "./screen/login";
 import register from "./screen/register";
-import history from "./screen/history";
-
+import History from "./screen/history";
+import pengantaran from "./screen/pengantaran";
+import Akun from "./screen/Akun";
+import Menu from "./screen/Menu";
+import Pemesanan from "./screen/Pemesanan";
+import Satuan from "./screen/Satuan";
+import Kiloan from "./screen/Kiloan";
+import Chat from "./screen/Chat";
+import pembayaransatuan from "./screen/pembayaransatuan";
+import pembayarankiloan from "./screen/pembayarankiloan";
 
 import { NavigationContainer, StackActions } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -20,8 +28,8 @@ export default function App() {
           options={{ headerShown : false }}
         />
          <Stack.Screen
-          name="home"
-          component={home}
+          name="Home"
+          component={Home}
           options={{headerShown : false}}
         />
         <Stack.Screen
@@ -35,8 +43,53 @@ export default function App() {
           options={{headerShown : false}}
         />
         <Stack.Screen
-          name="history"
-          component={history}
+          name="History"
+          component={History}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="pengantaran"
+          component={pengantaran}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="Akun"
+          component={Akun}
+          options={{headerShown : false}}
+        />
+         <Stack.Screen
+          name="Menu"
+          component={Menu}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="Pemesanan"
+          component={Pemesanan}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="Satuan"
+          component={Satuan}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="Kiloan"
+          component={Kiloan}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="Chat"
+          component={Chat}
+          options={{headerShown : false}}
+        />
+        <Stack.Screen
+          name="pembayaransatuan"
+          component={pembayaransatuan}
+          options={{headerShown : false}}
+        />
+         <Stack.Screen
+          name="pembayarankiloan"
+          component={pembayarankiloan}
           options={{headerShown : false}}
         />
       </Stack.Navigator>

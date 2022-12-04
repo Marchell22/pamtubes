@@ -43,6 +43,7 @@ const styles = StyleSheet.create({
     marginHorizontal: 10,
     marginVertical: 5,
     top: 20,
+    borderWidth:2
   },
   buttonstyles: {
     fontWeight: "bold",
