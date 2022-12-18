@@ -9,9 +9,9 @@ import Menu from "./screen/Menu";
 import Pemesanan from "./screen/Pemesanan";
 import Satuan from "./screen/Satuan";
 import Kiloan from "./screen/Kiloan";
-import Chat from "./screen/Chat";
 import pembayaransatuan from "./screen/pembayaransatuan";
 import pembayarankiloan from "./screen/pembayarankiloan";
+import imagepic from "./screen/imagepic";
 
 import { NavigationContainer, StackActions } from "@react-navigation/native";
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
@@ -62,6 +62,7 @@ export default function App() {
           component={Menu}
           options={{headerShown : false}}
         />
+         
         <Stack.Screen
           name="Pemesanan"
           component={Pemesanan}
@@ -77,11 +78,7 @@ export default function App() {
           component={Kiloan}
           options={{headerShown : false}}
         />
-        <Stack.Screen
-          name="Chat"
-          component={Chat}
-          options={{headerShown : false}}
-        />
+        
         <Stack.Screen
           name="pembayaransatuan"
           component={pembayaransatuan}
@@ -90,6 +87,11 @@ export default function App() {
          <Stack.Screen
           name="pembayarankiloan"
           component={pembayarankiloan}
+          options={{headerShown : false}}
+        />
+         <Stack.Screen
+          name="imagepic"
+          component={imagepic}
           options={{headerShown : false}}
         />
       </Stack.Navigator>
